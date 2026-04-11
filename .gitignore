@@ -1,0 +1,77 @@
+# ================================================
+# PYTHON / DJANGO — Backend
+# ================================================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyc
+
+# Environnement virtuel
+backend/venv/
+
+# Secrets Django
+backend/predictify/.env
+
+# Base de données locale
+backend/db.sqlite3
+
+# Fichiers temporaires
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+
+# ================================================
+# MODÈLES IA — trop lourds pour Git
+# ================================================
+backend/IA/prophet_/prophet_model/
+backend/IA/prophet_/plots/
+backend/IA/xgboost_model/xgboost_model/
+backend/IA/hybrid/combined_predictions/
+backend/xgboost_model/
+*.pkl
+*.joblib
+*.h5
+*.model
+
+# ================================================
+# DONNÉES STATIQUES INUTILES
+# ================================================
+backend/static/10-Histoire inspirante/
+backend/static/14-03-25/
+backend/static/à mémoriser/
+backend/static/Prophet et XGBoost/
+backend/static/Step/
+backend/static/Stock code tmp/
+
+# ================================================
+# REACT / NODE — Frontend
+# ================================================
+frontend/node_modules/
+frontend/build/
+frontend/.env
+frontend/.env.local
+frontend/.env.production
+
+# ================================================
+# VS CODE
+# ================================================
+.vscode/settings.json
+
+# ================================================
+# SYSTÈME WINDOWS
+# ================================================
+Thumbs.db
+desktop.ini
+
+# ================================================
+# LOGS
+# ================================================
+*.log
+logs/
+
+
+# Fichiers générés et brouillons
+backend/staticfiles/
+backend/static/
+frontend/Static/

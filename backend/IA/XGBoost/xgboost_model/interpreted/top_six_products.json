@@ -1,0 +1,38 @@
+[
+    {
+        "nom_produit": "Forever Argi+",
+        "score_performance": 0.85,
+        "prix_recommand\u00e9": 10.0,
+        "stock_recommand\u00e9_30j": 2.2
+    },
+    {
+        "nom_produit": "Forever Bright Toothgel",
+        "score_performance": 0.804,
+        "prix_recommand\u00e9": 8.47,
+        "stock_recommand\u00e9_30j": 1.86
+    },
+    {
+        "nom_produit": "Forever Freedom",
+        "score_performance": 0.779,
+        "prix_recommand\u00e9": 8.83,
+        "stock_recommand\u00e9_30j": 1.94
+    },
+    {
+        "nom_produit": "Aloe Berry Nectar",
+        "score_performance": 0.734,
+        "prix_recommand\u00e9": 8.5,
+        "stock_recommand\u00e9_30j": 1.87
+    },
+    {
+        "nom_produit": "Aloe Vera Gelly",
+        "score_performance": 0.721,
+        "prix_recommand\u00e9": 50.0,
+        "stock_recommand\u00e9_30j": 10.0
+    },
+    {
+        "nom_produit": "Forever Clean9",
+        "score_performance": 0.716,
+        "prix_recommand\u00e9": 9.95,
+        "stock_recommand\u00e9_30j": 2.19
+    }
+]

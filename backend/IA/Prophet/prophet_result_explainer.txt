@@ -1,0 +1,124 @@
+==============================================================
+📊 PRÉVISIONS DE VENTES POUR VOTRE BOUTIQUE
+Date : 30/03/2026 18:54
+==============================================================
+
+Bonjour,
+Ce rapport vous explique combien d’unités de chaque produit vous pourriez vendre dans les 30 prochains jours, selon nos prévisions intelligentes.
+
+### Que signifient ces prévisions ?
+- **Ventes prévues** : Le nombre d’unités que vous devriez vendre en moyenne chaque jour.
+- **Fourchette possible** : Une estimation basse et haute pour tenir compte des incertitudes.
+- **Stock recommandé** : La quantité à commander pour couvrir les ventes des 30 prochains jours, avec une petite marge.
+- **Alertes** : Si un produit risque de ne pas se vendre ou a des ventes très faibles, nous vous avertissons.
+
+### Vos produits analysés
+Voici nos recommandations pour chaque produit :
+
+**Produit : Aloe_Berry_Nectar**
+- Ventes prévues par jour : environ 3.99 unités
+- Fourchette possible : entre 3.33 et 4.65 unités par jour
+- Total prévu sur 30 jours : environ 119.6 unités
+- Stock recommandé : 131.56 unités
+  Commandez 131 unités pour éviter les ruptures de stock.
+  [⚠️ Note] Les ventes prévues sont faibles. Un graphique a été sauvegardé pour ce produit (voir plots/). Surveillez ses performances.
+---
+**Produit : Aloe_Vera_Gelly**
+- Ventes prévues par jour : environ 5.89 unités
+- Fourchette possible : entre 5.64 et 6.14 unités par jour
+- Total prévu sur 30 jours : environ 176.72 unités
+- Stock recommandé : 194.39 unités
+  Commandez 194 unités pour éviter les ruptures de stock.
+  [⚠️ Note] Les ventes prévues sont faibles. Un graphique a été sauvegardé pour ce produit (voir plots/). Surveillez ses performances.
+---
+**Produit : Forever_Active_Pro-B**
+- Ventes prévues par jour : environ 4.23 unités
+- Fourchette possible : entre 3.59 et 4.86 unités par jour
+- Total prévu sur 30 jours : environ 126.89 unités
+- Stock recommandé : 139.58 unités
+  Commandez 139 unités pour éviter les ruptures de stock.
+  [⚠️ Note] Les ventes prévues sont faibles. Un graphique a été sauvegardé pour ce produit (voir plots/). Surveillez ses performances.
+---
+**Produit : Forever_Aloe_Lips**
+- Ventes prévues par jour : environ 4.74 unités
+- Fourchette possible : entre 4.51 et 4.97 unités par jour
+- Total prévu sur 30 jours : environ 142.11 unités
+- Stock recommandé : 156.32 unités
+  Commandez 156 unités pour éviter les ruptures de stock.
+  [⚠️ Note] Les ventes prévues sont faibles. Un graphique a été sauvegardé pour ce produit (voir plots/). Surveillez ses performances.
+---
+**Produit : Forever_Aloe_Vera_Gel**
+- Ventes prévues par jour : environ 4.82 unités
+- Fourchette possible : entre 4.38 et 5.25 unités par jour
+- Total prévu sur 30 jours : environ 144.46 unités
+- Stock recommandé : 158.91 unités
+  Commandez 158 unités pour éviter les ruptures de stock.
+  [⚠️ Note] Les ventes prévues sont faibles. Un graphique a été sauvegardé pour ce produit (voir plots/). Surveillez ses performances.
+---
+**Produit : Forever_Arctic_Sea**
+- Ventes prévues par jour : environ 4.8 unités
+- Fourchette possible : entre 4.33 et 5.26 unités par jour
+- Total prévu sur 30 jours : environ 143.9 unités
+- Stock recommandé : 158.29 unités
+  Commandez 158 unités pour éviter les ruptures de stock.
+  [⚠️ Note] Les ventes prévues sont faibles. Un graphique a été sauvegardé pour ce produit (voir plots/). Surveillez ses performances.
+---
+**Produit : Forever_Argi+**
+- Ventes prévues par jour : environ 4.92 unités
+- Fourchette possible : entre 4.24 et 5.59 unités par jour
+- Total prévu sur 30 jours : environ 147.46 unités
+- Stock recommandé : 162.21 unités
+  Commandez 162 unités pour éviter les ruptures de stock.
+  [⚠️ Note] Les ventes prévues sont faibles. Un graphique a été sauvegardé pour ce produit (voir plots/). Surveillez ses performances.
+---
+**Produit : Forever_Bee_Honey**
+- Ventes prévues par jour : environ 3.64 unités
+- Fourchette possible : entre 2.97 et 4.32 unités par jour
+- Total prévu sur 30 jours : environ 109.32 unités
+- Stock recommandé : 120.25 unités
+  Commandez 120 unités pour éviter les ruptures de stock.
+  [⚠️ Note] Les ventes prévues sont faibles. Un graphique a été sauvegardé pour ce produit (voir plots/). Surveillez ses performances.
+---
+**Produit : Forever_Bright_Toothgel**
+- Ventes prévues par jour : environ 2.81 unités
+- Fourchette possible : entre 2.16 et 3.48 unités par jour
+- Total prévu sur 30 jours : environ 84.4 unités
+- Stock recommandé : 92.84 unités
+  Commandez 92 unités pour éviter les ruptures de stock.
+  [⚠️ Note] Les ventes prévues sont faibles. Un graphique a été sauvegardé pour ce produit (voir plots/). Surveillez ses performances.
+---
+**Produit : Forever_Clean9**
+- Ventes prévues par jour : environ 7.2 unités
+- Fourchette possible : entre 6.54 et 7.85 unités par jour
+- Total prévu sur 30 jours : environ 215.97 unités
+- Stock recommandé : 237.57 unités
+  Commandez 237 unités pour éviter les ruptures de stock.
+  [⚠️ Note] Les ventes prévues sont faibles. Un graphique a été sauvegardé pour ce produit (voir plots/). Surveillez ses performances.
+---
+**Produit : Forever_Freedom**
+- Ventes prévues par jour : environ 4.23 unités
+- Fourchette possible : entre 3.58 et 4.89 unités par jour
+- Total prévu sur 30 jours : environ 126.91 unités
+- Stock recommandé : 139.6 unités
+  Commandez 139 unités pour éviter les ruptures de stock.
+  [⚠️ Note] Les ventes prévues sont faibles. Un graphique a été sauvegardé pour ce produit (voir plots/). Surveillez ses performances.
+---
+**Produit : Forever_Therm**
+- Ventes prévues par jour : environ 6.54 unités
+- Fourchette possible : entre 6.31 et 6.77 unités par jour
+- Total prévu sur 30 jours : environ 196.08 unités
+- Stock recommandé : 215.69 unités
+  Commandez 215 unités pour éviter les ruptures de stock.
+  [⚠️ Note] Les ventes prévues sont faibles. Un graphique a été sauvegardé pour ce produit (voir plots/). Surveillez ses performances.
+---
+
+### Que faire maintenant ?
+1. Commandez les quantités recommandées pour chaque produit.
+2. Surveillez les produits avec des alertes (ventes nulles ou faibles).
+3. Comparez ces prévisions avec vos ventes réelles et contactez-nous si elles diffèrent beaucoup.
+
+### Note sur les prévisions
+Ces prévisions sont basées sur vos données de ventes passées, analysées par un modèle intelligent. Elles tiennent compte des tendances saisonnières (ex. : Noël, promotions). Les fourchettes basses et hautes montrent les variations possibles.
+
+Merci d'utiliser Predictify ! Pour toute question, contactez notre équipe.
+==============================================================

@@ -1,0 +1,47 @@
+/* Sidebar.css */
+
+/* Styles pour la barre latérale */
+.sidebar {
+    width: 250px;  /* Largeur de la barre latérale */
+    background-color: #3A3B3C;  /* Fond gris foncé */
+    color: white;  /* Texte blanc */
+    padding: 1.5rem 1rem;  /* Espacement intérieur */
+    display: flex;  /* Utilisation de flexbox */
+    flex-direction: column;  /* Organiser les éléments de haut en bas */
+    gap: 1.5rem;  /* Espacement entre les éléments */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  /* Ombre portée */
+  }
+  
+  /* Styles pour la liste de navigation dans la barre latérale */
+  .nav-links {
+    position: fixed;
+    top: 120px;
+    left: 1rem;
+    width: calc(250px - 2rem);
+    display: flex;  /* Utilisation de flexbox pour les éléments de la liste */
+    flex-direction: column;  /* Alignement vertical des éléments */
+    gap: 1rem;  /* Espacement entre les éléments */
+  }
+  
+  /* Styles pour chaque élément de la navigation */
+  .nav-item {
+    display: flex;  /* Utilisation de flexbox pour aligner l'icône et le texte */
+    align-items: center;  /* Alignement vertical */
+    padding: 0.75rem 1rem;  /* Espacement intérieur */
+    width: 100%;  /* Largeur de 100% */
+    background-color: transparent;  /* Fond transparent */
+    color: white;  /* Texte blanc */
+    transition: background-color 0.3s ease-in-out;  /* Effet de transition pour le survol */
+    border-radius: 0.5rem;  /* Coins arrondis */
+  }
+  
+  /* Effet de survol sur un élément de navigation */
+  .nav-item:hover {
+    background-color: #365492;  /* Changer la couleur de fond lors du survol */
+  }
+  
+  /* Style pour l'icône dans les éléments de navigation */
+  .nav-icon {
+    margin-right: 0.75rem;  /* Espacement entre l'icône et le texte */
+  }
+  

@@ -1,0 +1,40 @@
+.stock-forecast {
+  background-color: #f8fafc; /* 👉 Modifiable: Couleur de fond */
+  border-radius: 12px; /* 👉 Modifiable: Rayon de la bordure */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* 👉 Modifiable: Ombre (couleur et dimensions) */
+  padding: 20px; /* 👉 Modifiable: Padding */
+  width: 100%; /* 👉 Modifiable: Largeur */
+  height: 350px; /* 👉 Modifiable: Hauteur totale incluant titre et description */
+}
+
+.chart-title {
+  font-size: 1.5rem; /* 👉 Modifiable: Taille de la police */
+  font-weight: 600;
+  color: #1f2937; /* 👉 Modifiable: Couleur du texte */
+  margin-bottom: 10px; /* 👉 Modifiable: Marge inférieure */
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  text-align: center;
+}
+
+.chart-description {
+  font-size: 1rem; /* 👉 Modifiable: Taille de la police */
+  color: #374151; /* 👉 Modifiable: Couleur du texte */
+  margin-bottom: 20px; /* 👉 Modifiable: Marge inférieure */
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .stock-forecast {
+    padding: 15px; /* 👉 Modifiable: Padding */
+    height: 300px; /* 👉 Modifiable: Hauteur pour mobile */
+  }
+
+  .chart-title {
+    font-size: 1.25rem; /* 👉 Modifiable: Taille de la police */
+  }
+
+  .chart-description {
+    font-size: 0.875rem; /* 👉 Modifiable: Taille de la police */
+  }
+}

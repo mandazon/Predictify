@@ -1,0 +1,92 @@
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  row-gap: 2mm;
+  column-gap: 2mm;
+  padding: 1rem;
+  margin-top: 0;
+}
+
+@media (min-width: 640px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .product-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.product-card {
+  background-color: white;
+  border: none; /* Suppression de la bordure pour éviter tout espace */
+  border-radius: 0.5rem;
+  padding: 0; /* Suppression du padding pour que l’image remplisse la carte */
+  box-shadow: none; /* Suppression de l’ombre pour éviter tout effet sombre */
+  transition: transform 0.3s ease-in-out;
+  max-height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(-1cm);
+}
+
+.product-card:hover {
+  transform: scale(1.05) translateY(-1cm);
+  box-shadow: none; /* Suppression de l’ombre au survol */
+}
+
+.product-grid .product-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  background-color: #ffffff; /* Fond blanc pur pour éviter tout gris */
+  border-radius: 0; /* Suppression du rayon de bordure */
+  transition: filter 0.3s ease-in-out;
+  transform: translateY(38px);
+}
+
+.product-grid .product-image:hover {
+  filter: brightness(1.1);
+}
+
+/* Styles pour le tooltip */
+.tooltip {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: none; /* Suppression de tout fond pour éviter le noir */
+}
+
+.tooltip-text {
+  visibility: hidden;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  text-align: center;
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+  position: absolute;
+  z-index: 1;
+  bottom: 10px; /* Positionnement à l’intérieur, près du bas de la carte */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%; /* Réduction de la largeur pour un meilleur ajustement */
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+.tooltip:hover .tooltip-text {
+  visibility: visible;
+}
+
+/* Suppression des styles inutiles pour le texte direct */
+.product-name, .product-price, .product-stock {
+  display: none;
+}

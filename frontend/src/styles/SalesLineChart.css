@@ -1,0 +1,10 @@
+.sales-line-chart {
+  background-color: #FFFFFF; /* Fond blanc */
+  padding: 20px;
+  border-radius: 12px; /* Coins arrondis pour un look futuriste */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Ombre subtile */
+  height: 15cm; /* Hauteur minimale pour axe Y */
+  width: 100%;
+  max-width: 800px; /* Limite la largeur pour un dashboard équilibré */
+  margin: 0 auto; /* Centrage */
+}

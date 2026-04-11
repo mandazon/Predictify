@@ -1,0 +1,91 @@
+ /* Header.css */
+
+/* Styles pour l'en-tête principal */
+.header-main {
+  background-color: #4267B2;  /* Couleur de fond de l'en-tête */
+  color: white;  /* Texte blanc */
+  position: sticky;  /* Fixer l'en-tête en haut de la page */
+  top: 0;  /* Positionné en haut */
+  width: 100%;  /* Largeur de 100% */
+  z-index: 20;  /* Placer l'en-tête au-dessus des autres éléments */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  /* Ombre portée */
+}
+
+/* Styles pour le contenu de l'en-tête (logo + barre de recherche) */
+.header-content {
+  display: flex;  /* Utilisation de flexbox pour l'alignement */
+  justify-content: space-between;  /* Espacement entre le logo et la barre de recherche */
+  align-items: center;  /* Centrer verticalement */
+  padding: 1rem 2rem;  /* Espacement intérieur */
+  background-color: #385898;  /* Couleur de fond de la section */
+}
+
+/* Styles pour le conteneur du logo */
+.logo-container {
+  display: flex;  /* Utilisation de flexbox pour aligner l'image et le texte */
+  align-items: center;  /* Alignement vertical */
+  gap: 0.5rem;  /* Espacement entre l'image et le texte */
+}
+
+/* Style de l'image du logo */
+.logo {
+  height: 3rem;  /* Hauteur de l'image */
+  width: 3rem;  /* Largeur de l'image */
+  border-radius: 50%;  /* Forme ronde */
+}
+
+/* Style pour le titre de l'en-tête */
+.header-title {
+  font-size: 1.875rem;  /* Taille du texte (3xl) */
+  font-weight: 600;  /* Poids du texte */
+}
+
+/* Styles pour la barre de recherche (centrée) */
+.search-container {
+  display: flex;  /* Flexbox pour aligner l'icône et le champ de texte */
+  align-items: center;  /* Alignement vertical */
+  justify-content: center;  /* Centrer la barre de recherche */
+  background-color: white;  /* Fond blanc */
+  color: #4a4a4a;  /* Texte gris foncé */
+  padding: 0.5rem 1rem;  /* Espacement intérieur */
+  border-radius: 9999px;  /* Bord arrondi pour un look pillule */
+  max-width: 500px;  /* Largeur maximale */
+  width: 100%;  /* Largeur de 100% */
+  transform: scale(1);  /* Échelle de base */
+  transition: transform 0.2s;  /* Transition lors du focus */
+  margin: 0 auto;  /* Centrer horizontalement */
+}
+
+/* Effet lors du focus sur la barre de recherche */
+.search-container:focus-within {
+  transform: scale(1.05);  /* Légère augmentation de l'échelle pour effet de focus */
+}
+
+/* Style pour l'icône de recherche */
+.search-icon {
+  color: #9CA3AF;  /* Couleur gris clair pour l'icône */
+  margin-right: 0.5rem;  /* Espacement entre l'icône et le champ de texte */
+}
+
+/* Style pour le champ de saisie de la recherche */
+.search-input {
+  background-color: transparent;  /* Fond transparent */
+  color: #4a4a4a;  /* Couleur du texte gris foncé */
+  font-size: 0.875rem;  /* Taille de police plus petite (text-sm) */
+  width: 100%;  /* Largeur de 100% */
+  border: none;  /* Supprimer la bordure */
+  outline: none;  /* Retirer le contour par défaut */
+}
+
+/* Styles pour le layout principal (barre latérale + contenu principal) */
+.main-layout {
+  display: flex;  /* Utilisation de flexbox pour l'alignement de la barre latérale et du contenu */
+  min-height: 100vh;  /* Hauteur minimale à 100% de la fenêtre */
+}
+
+/* Styles pour le contenu principal */
+.main-content {
+  flex: 1;  /* Prendre tout l'espace restant */
+  padding: 2rem;  /* Espacement intérieur */
+  background-color: #f3f4f6;  /* Fond gris clair */
+}

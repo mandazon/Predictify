@@ -1,0 +1,222 @@
+/* --- Variables & Design System --- */
+:root {
+  --primary-color: #635bff;
+  --secondary-color: #0a2540;
+  --success-color: #00d66f;
+  --text-dark: #1a1f36;
+  --text-soft: #424770;
+  --text-muted: #697386;
+  --bg-card: rgba(255, 255, 255, 0.98);
+  --overlay-bg: rgba(15, 23, 42, 0.6);
+  --transition: all 0.2s ease-in-out;
+  --shadow-premium: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+/* --- Container Principal (Overlay) --- */
+.payment-choice {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--overlay-bg);
+  backdrop-filter: blur(8px);
+  padding: 20px;
+  animation: fadeIn 0.3s ease-out;
+}
+
+/* --- Carte Principale (Modal) --- */
+.choice-container {
+  position: relative;
+  width: 100%;
+  max-width: 440px;
+  max-height: 85vh;
+  background: var(--bg-card);
+  padding: 2.5rem 2.2rem;
+  border-radius: 20px;
+  box-shadow: var(--shadow-premium);
+  overflow-y: auto;
+  text-align: center; /* Centre tous les textes par défaut */
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+/* Custom Scrollbar */
+.choice-container::-webkit-scrollbar { width: 5px; }
+.choice-container::-webkit-scrollbar-thumb { background: #e6ebf1; border-radius: 10px; }
+
+/* --- Éléments de Navigation & Titre --- */
+.back-btn {
+  background: #f6f9fc;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 20px;
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+  margin-bottom: 1rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.back-btn:hover {
+  background: #eef2f7;
+  color: var(--primary-color);
+}
+
+.choice-container h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin: 0.5rem 0 1.5rem;
+}
+
+/* --- Récapitulatif de Commande Centré --- */
+.order-summary {
+  background: #f7fafc;
+  padding: 1.2rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  border: 1px solid #edf2f7;
+}
+
+.order-summary h3 {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  letter-spacing: 0.05em;
+  margin-bottom: 0.5rem;
+}
+
+.order-summary p {
+  font-size: 1rem;
+  color: var(--text-soft);
+  margin: 0.2rem 0;
+}
+
+.order-summary .total {
+  display: block;
+  font-size: 1.6rem; /* Taille harmonieuse */
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-top: 0.5rem;
+}
+
+/* --- Logos de Paiement Alignés --- */
+.payment-methods {
+  margin-bottom: 2rem;
+}
+
+.payment-methods h3 {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+}
+
+.icons-row {
+  display: flex;
+  justify-content: center; /* Alignement horizontal central */
+  align-items: center;     /* Alignement vertical central */
+  gap: 18px;               /* Espacement régulier entre les logos */
+  flex-wrap: wrap;
+}
+
+.payment-icon {
+  height: 22px;            /* Taille uniforme pour l'harmonie */
+  width: auto;
+  opacity: 0.7;
+  transition: var(--transition);
+}
+
+.payment-icon:hover {
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+/* --- Formulaire --- */
+.payment-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  text-align: left; /* On garde les labels à gauche pour la lisibilité */
+}
+
+.payment-form label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-soft);
+  margin-bottom: 0.3rem;
+  display: block;
+}
+
+.payment-form input {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border-radius: 10px;
+  border: 1px solid #e0e6ed;
+  font-size: 0.95rem;
+  transition: var(--transition);
+}
+
+.payment-form input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(99, 91, 255, 0.1);
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+/* --- Bouton de Paiement (CTA) --- */
+.pay-btn {
+  width: 100%;
+  padding: 1.1rem;
+  margin-top: 0.5rem;
+  background: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+  box-shadow: 0 4px 12px rgba(99, 91, 255, 0.2);
+}
+
+.pay-btn:hover {
+  background: var(--secondary-color);
+  transform: translateY(-1px);
+}
+
+/* --- Confiance & Réassurance --- */
+.trust-bar {
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+  margin-top: 1.5rem;
+  font-size: 0.75rem;
+  color: var(--success-color);
+  font-weight: 500;
+}
+
+.reassurance-text {
+  margin-top: 1.5rem;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+/* --- Animations --- */
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+/* --- Mobile --- */
+@media (max-width: 480px) {
+  .choice-container { padding: 1.5rem; }
+  .form-row { grid-template-columns: 1fr; }
+}

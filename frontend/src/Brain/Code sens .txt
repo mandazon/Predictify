@@ -1,0 +1,89 @@
+// 📌 1. Les Fichiers et Modules
+// Importation de React et du hook useState pour gérer l'état local du composant
+import React, { useState } from "react";
+
+// 📌 2. Déclaration de la Fonction et des Variables d'État
+const ProductSalesForm = () => {
+  // useState permet de créer un état local pour stocker les valeurs du formulaire
+  const [formData, setFormData] = useState({
+    product_name: "",      // Nom du produit
+    quantity_sold: "",     // Quantité vendue
+    unit_price: "",        // Prix unitaire
+    sales_date: "",        // Date de vente
+    client: "",            // Nom du client
+    category: "",          // Catégorie du produit
+    total_sales: "",       // Total des ventes
+    winning_product: false, // Produit gagnant (booléen)
+    trend: ""              // Tendance des ventes
+  });
+
+  // 📌 3. Fonction pour gérer le changement des valeurs des inputs
+  const handleChange = (e) => {
+    // Déstructuration des valeurs reçues de l'événement
+    const { name, value, type, checked } = e.target;
+
+    // Mise à jour du state avec les nouvelles valeurs saisies
+    setFormData({
+      ...formData,
+      [name]: type === "checkbox" ? checked : value
+    });
+  };
+
+  // 📌 4. Fonction pour gérer la soumission du formulaire
+  const handleSubmit = (e) => {
+    e.preventDefault();  // Empêche le rechargement de la page lors de la soumission
+    // Les données seront envoyées via la fonction `send`
+  };
+
+  // 📌 5. Fonction pour envoyer les données via une requête API
+  const send = () => {
+    console.log(formData); // Affichage des données dans la console (Entrées/Sorties)
+
+    // Envoi des données à l'API en méthode POST
+    fetch('http://127.0.0.1:8000/api/sales/', {
+        method: 'POST', // Définition de la méthode HTTP utilisée
+        headers: {
+            'Content-Type': 'application/json', // Type de contenu envoyé
+        },
+        body: JSON.stringify(formData), // Conversion de l'objet en JSON avant envoi
+    })
+    .then((response) => response.json()) // Transformation de la réponse en JSON
+    .catch((error) => console.error('Error posting data:', error)); // Gestion des erreurs
+  };
+
+  // 📌 6. Retour du JSX pour l'affichage du formulaire
+  return (
+    <div className="max-w-lg mx-auto bg-white p-6 rounded-2xl shadow-md border border-blue-500">
+      {/* Titre du formulaire */}
+      <h2 className="text-xl font-bold text-blue-600 mb-4">Saisie des Ventes</h2>
+
+      {/* 📌 7. Structure de Contrôle : Formulaire avec champs d'entrée */}
+      <form onSubmit={handleSubmit} className="space-y-4">
+        {/* Champs de saisie du formulaire */}
+        <input type="text" name="product_name" placeholder="Nom du produit" value={formData.product_name} onChange={handleChange} className="w-full p-2 border rounded-lg" required />
+        <input type="number" name="quantity_sold" placeholder="Quantité vendue" value={formData.quantity_sold} onChange={handleChange} className="w-full p-2 border rounded-lg" required />
+        <input type="number" name="unit_price" placeholder="Prix unitaire (€)" value={formData.unit_price} onChange={handleChange} className="w-full p-2 border rounded-lg" required />
+        <input type="date" name="sales_date" value={formData.sales_date} onChange={handleChange} className="w-full p-2 border rounded-lg" required />
+        <input type="text" name="client" placeholder="Client" value={formData.client} onChange={handleChange} className="w-full p-2 border rounded-lg" required />
+        <input type="text" name="category" placeholder="Catégorie" value={formData.category} onChange={handleChange} className="w-full p-2 border rounded-lg" required />
+        <input type="number" name="total_sales" placeholder="Total Vente (€)" value={formData.total_sales} onChange={handleChange} className="w-full p-2 border rounded-lg" required />
+
+        {/* Checkbox pour indiquer si c'est un produit gagnant */}
+        <div className="flex items-center gap-2">
+          <input type="checkbox" name="winning_product" checked={formData.winning_product} onChange={handleChange} />
+          <label className="text-blue-600">Produit Gagnant</label>
+        </div>
+
+        <input type="text" name="trend" placeholder="Tendance" value={formData.trend} onChange={handleChange} className="w-full p-2 border rounded-lg" required />
+
+        {/* 📌 8. Bouton de soumission qui appelle `send()` pour envoyer les données */}
+        <button type="submit" className="w-full bg-blue-600 text-white p-2 rounded-lg hover:bg-blue-700" onClick={() => send()}>
+          Soumettre
+        </button>
+      </form>
+    </div>
+  );
+};
+
+// 📌 9. Exportation du composant pour être utilisé ailleurs dans l'application
+export default ProductSalesForm;

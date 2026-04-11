@@ -1,0 +1,99 @@
+==============================================================
+📊 EXPLICATION DES PRÉDICTIONS POUR VOTRE BOUTIQUE
+Date : 30/03/2026 19:05
+==============================================================
+
+Bonjour,
+Ce rapport vous explique les recommandations de vente pour vos produits, basées sur une analyse intelligente des données passées.
+
+### Que signifient ces recommandations ?
+- **Quantité prévue** : Le nombre d'unités que vous pourriez vendre chaque jour, en moyenne.
+- **Prix recommandé** : Une suggestion de prix pour chaque unité, calculée pour maximiser vos profits.
+- **Stock recommandé** : La quantité à avoir en stock pour les 30 prochains jours, pour éviter les ruptures.
+
+### Vos produits analysés
+Voici ce que nous recommandons pour chaque produit :
+
+**Produit : Aloe Berry Nectar**
+- Quantité prévue par jour : environ 1.7 unités
+- Prix recommandé : 8.5 € par unité
+- Stock pour 30 jours : environ 1.87 unités
+  Conseil : Commandez 1 unités pour ce produit et fixez son prix autour de 8.5 € pour optimiser vos ventes.
+---
+**Produit : Aloe Vera Gelly**
+- Quantité prévue par jour : environ 18.89 unités
+- Prix recommandé : 94.46 € par unité
+- Stock pour 30 jours : environ 20.78 unités
+  Conseil : Commandez 20 unités pour ce produit et fixez son prix autour de 94.46 € pour optimiser vos ventes.
+---
+**Produit : Forever Active Pro-B**
+- Quantité prévue par jour : environ 1.99 unités
+- Prix recommandé : 9.95 € par unité
+- Stock pour 30 jours : environ 2.19 unités
+  Conseil : Commandez 2 unités pour ce produit et fixez son prix autour de 9.95 € pour optimiser vos ventes.
+---
+**Produit : Forever Aloe Lips**
+- Quantité prévue par jour : environ 12.0 unités
+- Prix recommandé : 59.99 € par unité
+- Stock pour 30 jours : environ 13.2 unités
+  Conseil : Commandez 13 unités pour ce produit et fixez son prix autour de 59.99 € pour optimiser vos ventes.
+---
+**Produit : Forever Aloe Vera Gel**
+- Quantité prévue par jour : environ 5.0 unités
+- Prix recommandé : 25.0 € par unité
+- Stock pour 30 jours : environ 5.5 unités
+  Conseil : Commandez 5 unités pour ce produit et fixez son prix autour de 25.0 € pour optimiser vos ventes.
+---
+**Produit : Forever Arctic Sea**
+- Quantité prévue par jour : environ 3.62 unités
+- Prix recommandé : 18.08 € par unité
+- Stock pour 30 jours : environ 3.98 unités
+  Conseil : Commandez 3 unités pour ce produit et fixez son prix autour de 18.08 € pour optimiser vos ventes.
+---
+**Produit : Forever Argi+**
+- Quantité prévue par jour : environ 2.0 unités
+- Prix recommandé : 10.0 € par unité
+- Stock pour 30 jours : environ 2.2 unités
+  Conseil : Commandez 2 unités pour ce produit et fixez son prix autour de 10.0 € pour optimiser vos ventes.
+---
+**Produit : Forever Bee Honey**
+- Quantité prévue par jour : environ 2.0 unités
+- Prix recommandé : 10.0 € par unité
+- Stock pour 30 jours : environ 2.2 unités
+  Conseil : Commandez 2 unités pour ce produit et fixez son prix autour de 10.0 € pour optimiser vos ventes.
+---
+**Produit : Forever Bright Toothgel**
+- Quantité prévue par jour : environ 1.69 unités
+- Prix recommandé : 8.47 € par unité
+- Stock pour 30 jours : environ 1.86 unités
+  Conseil : Commandez 1 unités pour ce produit et fixez son prix autour de 8.47 € pour optimiser vos ventes.
+---
+**Produit : Forever Clean9**
+- Quantité prévue par jour : environ 1.99 unités
+- Prix recommandé : 9.95 € par unité
+- Stock pour 30 jours : environ 2.19 unités
+  Conseil : Commandez 2 unités pour ce produit et fixez son prix autour de 9.95 € pour optimiser vos ventes.
+---
+**Produit : Forever Freedom**
+- Quantité prévue par jour : environ 1.77 unités
+- Prix recommandé : 8.83 € par unité
+- Stock pour 30 jours : environ 1.94 unités
+  Conseil : Commandez 1 unités pour ce produit et fixez son prix autour de 8.83 € pour optimiser vos ventes.
+---
+**Produit : Forever Therm**
+- Quantité prévue par jour : environ 10.68 unités
+- Prix recommandé : 53.41 € par unité
+- Stock pour 30 jours : environ 11.75 unités
+  Conseil : Commandez 11 unités pour ce produit et fixez son prix autour de 53.41 € pour optimiser vos ventes.
+---
+
+### Que faire maintenant ?
+1. Vérifiez les stocks actuels et commandez les quantités recommandées.
+2. Ajustez les prix de vos produits selon nos suggestions.
+3. Suivez les ventes réelles et contactez-nous si les chiffres diffèrent beaucoup.
+
+### Note sur la fiabilité
+Ces recommandations sont basées sur un modèle intelligent qui analyse vos données passées. Plus vos données sont complètes, plus les prédictions sont précises. Si un produit a un score de fiabilité faible, surveillez ses ventes de près.
+
+Merci d'utiliser Predictify ! Si vous avez des questions, contactez notre équipe.
+==============================================================

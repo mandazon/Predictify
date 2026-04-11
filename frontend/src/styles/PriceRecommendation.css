@@ -1,0 +1,81 @@
+.price-recommendation {
+  background-color: #f8fafc; /* 👉 Modifiable: Couleur de fond */
+  border-radius: 12px; /* 👉 Modifiable: Rayon de la bordure */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* 👉 Modifiable: Ombre (couleur et dimensions) */
+  padding: 20px; /* 👉 Modifiable: Padding */
+  width: 100%; /* 👉 Modifiable: Largeur */
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.price-title {
+  font-size: 1.5rem; /* 👉 Modifiable: Taille de la police */
+  font-weight: 600;
+  color: #1f2937; /* 👉 Modifiable: Couleur du texte */
+  margin-bottom: 20px; /* 👉 Modifiable: Marge inférieure */
+  text-align: center;
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+.price-table {
+  width: 100%; /* 👉 Modifiable: Largeur */
+  border-collapse: collapse;
+  background: #fff; /* 👉 Modifiable: Couleur de fond */
+  border-radius: 8px; /* 👉 Modifiable: Rayon de la bordure */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 👉 Modifiable: Ombre (couleur et dimensions) */
+}
+
+.price-table th,
+.price-table td {
+  padding: 8px; /* 👉 Modifiable: Padding */
+  text-align: left;
+  border-bottom: 1px solid #e5e7eb; /* 👉 Modifiable: Couleur et épaisseur de la bordure */
+  font-size: 14px; /* 👉 Modifiable: Taille de la police */
+  color: #374151; /* 👉 Modifiable: Couleur du texte */
+}
+
+.price-table th {
+  background-color: #f4f4f4; /* 👉 Modifiable: Couleur de fond */
+  font-weight: 600;
+}
+
+.table-row:hover {
+  background-color: #f9f9f9; /* 👉 Modifiable: Couleur de fond au survol */
+}
+
+.current-price,
+.recommended-price {
+  font-weight: 500;
+}
+
+.difference.positive {
+  color: #16A34A; /* 👉 Modifiable: Couleur du texte */
+  font-weight: 500;
+}
+
+.difference.negative {
+  color: #B91C1C; /* 👉 Modifiable: Couleur du texte */
+  font-weight: 500;
+}
+
+.no-data {
+  text-align: center;
+  color: #374151; /* 👉 Modifiable: Couleur du texte */
+  padding: 20px; /* 👉 Modifiable: Padding */
+}
+
+@media (max-width: 768px) {
+  .price-recommendation {
+    padding: 15px; /* 👉 Modifiable: Padding */
+  }
+
+  .price-title {
+    font-size: 1.25rem; /* 👉 Modifiable: Taille de la police */
+  }
+
+  .difference-column {
+    display: none; /* Masquer la colonne Différence sur mobile */
+  }
+}

@@ -1,0 +1,28 @@
+/* ExportButton.css */
+.export-button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: calc(2rem - 3cm); /* 👉 Modifiable: Marge supérieure */
+}
+
+.export-button {
+    background-color: #4267B2; /* 👉 Modifiable: Couleur de fond */
+    color: white; /* 👉 Modifiable: Couleur du texte */
+    padding: 0.5rem 1rem; /* 👉 Modifiable: Padding */
+    border-radius: 9999px; /* 👉 Modifiable: Rayon de la bordure */
+    font-size: 1rem; /* 👉 Modifiable: Taille de la police */
+    font-weight: 600; /* font-semibold */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 👉 Modifiable: Ombre (couleur et dimensions) */
+    transition: background-color 0.3s ease-in-out; /* 👉 Modifiable: Durée et type de transition */
+    width: auto; /* 👉 Modifiable: Largeur */
+    max-width: none; /* 👉 Modifiable: Largeur maximale */
+}
+
+.export-button:hover {
+    background-color: #2563EB; /* 👉 Modifiable: Couleur de fond au survol */
+}
+
+.export-button:focus {
+    outline: 2px solid rgba(37, 99, 235, 0.7); /* 👉 Modifiable: Couleur et épaisseur du contour */
+    outline-offset: 2px; /* 👉 Modifiable: Décalage du contour */
+}

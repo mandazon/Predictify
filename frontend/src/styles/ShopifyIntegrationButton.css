@@ -1,0 +1,40 @@
+/* Conteneur principal */
+.shopify-integration-container {
+  text-align: center;
+  margin-top: 7.0px; /* Espacement ajusté pour déplacer le bouton de 7.56px vers le haut */
+}
+
+/* Style du bouton d'intégration */
+.shopify-button {
+  background-color: #4267B2; /* Couleur de fond du bouton */
+  color: white; /* Couleur du texte */
+  font-weight: 600; /* Police en gras */
+  border-radius: 8px; /* Coins arrondis */
+  padding: 12px 24px; /* Espacement interne du bouton */
+  width: 100%; /* Le bouton occupe toute la largeur disponible */
+  max-width: 320px; /* Largeur maximale du bouton */
+  margin: 0 auto; /* Centrage du bouton */
+  display: flex; /* Affichage flex */
+  align-items: center; /* Alignement vertical */
+  justify-content: center; /* Alignement horizontal */
+  gap: 12px; /* Espacement entre l'icône et le texte */
+  transition: all 0.3s ease-in-out; /* Transition pour l'effet de survol */
+}
+
+/* Effet de survol du bouton */
+.shopify-button:hover {
+  background-color: #1877F2; /* Changement de couleur au survol */
+  transform: scale(1.05); /* Agrandissement au survol */
+}
+
+/* Icône du bouton */
+.shopify-icon {
+  font-size: 2rem; /* Taille de l'icône */
+}
+
+/* Description sous le bouton */
+.shopify-description {
+  font-size: 0.875rem; /* Taille du texte de la description */
+  color: #4B5563; /* Couleur gris clair */
+  margin-top: 8px; /* Espacement au-dessus de la description */
+}

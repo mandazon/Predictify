@@ -1,0 +1,146 @@
+/* src/styles/PricingSummary.css */
+.summary-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  backdrop-filter: blur(4px);
+  animation: fadeIn 0.3s ease;
+}
+
+.summary-modal {
+  background: rgba(255, 255, 255, 0.97);
+  backdrop-filter: blur(12px);
+  border-radius: 16px;
+  width: 90%;
+  max-width: 460px;
+  padding: 2.5rem 2rem;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.25);
+  position: relative;
+  animation: modalAppear 0.4s cubic-bezier(0.34,1.56,0.64,1);
+}
+
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+@keyframes modalAppear { from { opacity: 0; transform: scale(0.88) translateY(30px); } to { opacity: 1; transform: scale(1) translateY(0); } }
+
+.close-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1.2rem;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #666;
+  cursor: pointer;
+}
+
+.summary-title {
+  text-align: center;
+  color: var(--text-dark);
+  font-size: 1.8rem;
+  margin-bottom: 1.8rem;
+}
+
+.plan-card-summary {
+  background: rgba(240, 242, 245, 0.6);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1.8rem;
+  text-align: center;
+}
+
+.plan-card-summary h3 {
+  font-size: 1.6rem;
+  margin-bottom: 0.6rem;
+}
+
+.summary-price {
+  font-size: 2.6rem;
+  font-weight: bold;
+  color: var(--primary-color);
+  margin: 0.4rem 0;
+}
+
+.summary-old-price {
+  color: grey;
+  margin-bottom: 1rem;
+}
+
+.savings {
+  color: #2ecc71;
+  font-weight: bold;
+  margin-left: 0.6rem;
+}
+
+.summary-rate {
+  font-size: 1.1rem;
+  margin: 1rem 0;
+  color: #555;
+}
+
+.summary-features {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+.summary-features li {
+  padding: 0.5rem 0;
+  position: relative;
+  padding-left: 1.8rem;
+}
+
+.summary-features li::before {
+  content: "✔";
+  color: var(--primary-color);
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+}
+
+.reassurance {
+  text-align: center;
+  margin: 1.5rem 0;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.secure-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  background: #e8f4fd;
+  color: var(--primary-color);
+  padding: 0.5rem 1rem;
+  border-radius: 30px;
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+}
+
+.confirm-btn {
+  width: 100%;
+  padding: 1.1rem;
+  background: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.15rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.confirm-btn:hover {
+  background: var(--secondary-color);
+  transform: translateY(-2px);
+}
+
+.support-text {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #777;
+  margin-top: 1.2rem;
+}

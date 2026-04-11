@@ -1,0 +1,42 @@
+/* FileFormatSelector.css */
+.file-format-selector {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.file-format-item {
+  padding: 1rem;
+  border: 2px solid #d1d5db; /* Border par défaut */
+  border-radius: 0.5rem;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.file-format-item.selected {
+  border-color: #4267B2;
+  background-color: #e9ebee;
+}
+
+.file-format-item:hover {
+  border-color: #4267B2;
+}
+
+.file-format-icon {
+  color: #4267B2;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.file-format-title {
+  color: #4267B2;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.file-format-description {
+  font-size: 0.875rem;
+  color: #4b5563; /* Gris plus clair */
+}

@@ -1,0 +1,190 @@
+/* Base container for the marketing strategy */
+.marketing-strategy {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+  padding: 24px;
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: 'Roboto', -apple-system, BlinkMacSystemFont, sans-serif;
+  color: #1f2937;
+}
+
+/* Title styling */
+.marketing-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+/* Product strategies container */
+.product-strategies {
+  margin-bottom: 24px;
+  background: #f9fafb;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Product name with accordion toggle */
+.product-name {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 12px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Product target text */
+.product-target {
+  font-size: 0.875rem;
+  color: #4b5563;
+  margin: 8px 0;
+}
+
+.product-target strong {
+  color: #111827;
+  font-weight: 600;
+}
+
+/* Timeline (strategy roadmap) */
+.strategy-roadmap {
+  margin-top: 16px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Timeline line (replacing recharts Line component for better control) */
+.strategy-roadmap::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  right: 5%;
+  height: 4px;
+  background: linear-gradient(90deg, #16A34A, #60a5fa);
+  border-radius: 2px;
+  z-index: 0;
+  transform: translateY(-50%);
+}
+
+/* Recharts surface */
+.recharts-surface {
+  overflow: visible;
+}
+
+/* Scatter points (icons) */
+.recharts-scatter-symbol {
+  transition: none; /* Remove all transitions to prevent shaking */
+}
+
+/* Ensure icons only transition color */
+.strategy-roadmap .flex.items-center.justify-center {
+  transition: color 0.2s ease; /* Smooth color change only */
+}
+
+/* Tooltip styling */
+.custom-tooltip {
+  background-color: #1f2937;
+  color: #ffffff;
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  border: 1px solid #374151;
+}
+
+.custom-tooltip p {
+  margin: 0;
+}
+
+.custom-tooltip .font-semibold {
+  font-weight: 600;
+}
+
+.custom-tooltip .font-medium {
+  font-weight: 500;
+}
+
+/* Global advice section */
+.global-advice {
+  margin-top: 24px;
+  padding: 16px;
+  background: #f9fafb;
+  border-radius: 8px;
+  border-left: 4px solid #16A34A;
+}
+
+/* Advice title */
+.advice-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 8px;
+}
+
+/* Advice description */
+.advice-description {
+  font-size: 0.875rem;
+  color: #4b5563;
+}
+
+/* Accordion toggle */
+.accordion-toggle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #4b5563;
+}
+
+/* Hidden class for mobile accordion */
+.hidden {
+  display: none;
+}
+
+/* Social media section */
+.social-media {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .marketing-strategy {
+    padding: 16px;
+    width: 90%;
+  }
+
+  .marketing-title {
+    font-size: 1.5rem;
+  }
+
+  .product-name {
+    font-size: 1.25rem;
+  }
+
+  .product-target,
+  .advice-description {
+    font-size: 0.75rem;
+  }
+
+  .custom-tooltip {
+    font-size: 0.75rem;
+    padding: 8px;
+  }
+
+  .strategy-roadmap::before {
+    height: 3px;
+    left: 3%;
+    right: 3%;
+  }
+}

@@ -1,0 +1,49 @@
+/* Tooltip */
+.tooltip {
+  position: absolute;
+  background-color: black;
+  color: white;
+  font-size: 0.75rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  top: -2.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Style du bouton d'importation */
+.import-button {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  background-color: white;
+  border: 1px solid #4267B2;
+  color: #4267B2;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  transition: all 0.3s ease-in-out;
+  width: 100%; /* Le bouton occupe toute la largeur disponible */
+  max-width: 320px; /* Largeur maximale du bouton */
+  margin: 0 auto; /* Centrage du bouton */
+  justify-content: center; /* Centrage du contenu */
+}
+
+/* Effet de survol du bouton */
+.import-button:hover {
+  background-color: #f0f7ff;
+}
+
+/* Effet de clic sur le bouton */
+.import-button:active {
+  animation: shake 0.3s;
+}
+
+/* Animation de secousse pour le clic */
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+  75% { transform: translateX(-5px); }
+  100% { transform: translateX(0); }
+}

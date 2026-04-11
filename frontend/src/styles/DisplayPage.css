@@ -1,0 +1,61 @@
+/* Style général pour la page d'affichage */
+html, body {
+    height: 100%; /* 👉 Modifiable: Hauteur */
+    margin: 0; /* 👉 Modifiable: Marges */
+    padding: 0; /* 👉 Modifiable: Paddings */
+}
+
+.display-page {
+    background: linear-gradient(180deg, #ffffff, #4267B2); /* 👉 Modifiable: Couleurs et direction du dégradé */
+    color: white; /* 👉 Modifiable: Couleur du texte */
+    font-family: Arial, sans-serif;
+    padding: 20px; /* 👉 Modifiable: Padding */
+    min-height: calc(100vh + 45.36px); /* 👉 Modifiable: Hauteur minimale */
+    width: calc(100% + 64.92px); /* 👉 Modifiable: Largeur */
+    margin-top: -35px; /* 👉 Modifiable: Marge supérieure */
+    margin-left: -32.46px; /* 👉 Modifiable: Marge gauche */
+    margin-right: -32.46px; /* 👉 Modifiable: Marge droite */
+    box-sizing: border-box; /* Inclut les paddings et bordures dans les dimensions */
+    overflow: hidden; /* Désactive la barre de défilement */
+}
+
+/* Style de l'en-tête */
+.display-page header {
+    text-align: center;
+    padding: 20px; /* 👉 Modifiable: Padding */
+    margin-top: -0.5cm; /* 👉 Modifiable: Marge supérieure */
+}
+
+.display-page header h1 {
+    font-size: 2rem; /* 👉 Modifiable: Taille de la police */
+    font-weight: bold;
+    background: linear-gradient(135deg, #4267B2, #6a89cc); /* 👉 Modifiable: Couleurs et direction du dégradé */
+    -webkit-background-clip: text; /* Préfixe vendeur pour compatibilité avec anciens navigateurs */
+    background-clip: text; /* 👉 Modifiable: Propriété standard pour la zone de peinture du fond */
+    color: transparent; /* 👉 Modifiable: Couleur du texte (transparent pour le dégradé) */
+    margin-top: -10px; /* 👉 Modifiable: Marge supérieure */
+}
+
+.display-page header p {
+    font-size: 1rem; /* 👉 Modifiable: Taille de la police */
+    font-weight: normal;
+    color: #4A4A4A; /* 👉 Modifiable: Couleur du texte */
+}
+
+/* Section principale */
+.display-page main {
+    padding: 20px; /* 👉 Modifiable: Padding */
+    flex-grow: 1; /* Permet au main de s'étendre pour remplir tout l'espace restant */
+}
+
+/* Conteneur du bouton d'exportation */
+.export-btn-container {
+    text-align: center;
+    margin-top: 20px; /* 👉 Modifiable: Marge supérieure */
+}
+
+/* Suppression de la règle .product-image pour éviter le conflit avec ProductGrid.css */
+/* .product-image {
+    width: 16.67%;
+    height: auto;
+} */
