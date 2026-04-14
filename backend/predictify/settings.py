@@ -27,16 +27,16 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'predict',  # Votre application principale
-    'corsheaders',  # Ajout de corsheaders ici
+    'corsheaders',
     'rest_framework',
-    'django_extensions',  # Ajout de django_extensions pour des outils pratiques
+    'django_extensions',
 ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
-    'corsheaders.middleware.CorsMiddleware',  # Assurez-vous qu'il est ici
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
@@ -110,10 +110,20 @@ FAVICON_PATH = STATIC_URL + 'images/favicon.ico'
 # Default primary key field type
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+# ====================== FILE UPLOAD CONFIGURATION ======================
+# Configuration pour gérer les gros formulaires dans l'admin (sélection multiple)
+DATA_UPLOAD_MAX_MEMORY_SIZE = 2621440          # 2.5 Mo (déjà présent)
+DATA_UPLOAD_MAX_NUMBER_FIELDS = int(os.getenv('DATA_UPLOAD_MAX_NUMBER_FIELDS', 50000))
+DATA_UPLOAD_MAX_NUMBER_FILES = 100
+
+# Media files configuration
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
 # Configuration for Django REST Framework (DRF)
 REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': [
-        'rest_framework.permissions.AllowAny',  # ⚠️ Test temporaire - remplace par IsAuthenticatedOrReadOnly en prod
+        'rest_framework.permissions.AllowAny',
     ],
     'DEFAULT_AUTHENTICATION_CLASSES': [
         'rest_framework.authentication.SessionAuthentication',
@@ -123,27 +133,18 @@ REST_FRAMEWORK = {
 }
 
 # CORS configuration
-CORS_ALLOW_ALL_ORIGINS = False  # Désactiver l'accès à tous les domaines en production
+CORS_ALLOW_ALL_ORIGINS = False
 CORS_ALLOWED_ORIGINS = [
-    "https://predictifyfrontend.com",  # Autoriser seulement le frontend en production
-    "http://localhost:3000",  # L'URL de mon frontend en développement
+    "https://predictifyfrontend.com",
+    "http://localhost:3000",
 ]
 CORS_ALLOW_METHODS = [
-    'GET',
-    'POST',
-    'PUT',
-    'PATCH',
-    'DELETE',
-    'OPTIONS',
+    'GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS',
 ]
-CORS_ALLOW_CREDENTIALS = True  # Si vous avez besoin de gérer des cookies, sessions, etc.
+CORS_ALLOW_CREDENTIALS = True
 
 # CSRF configuration
 CSRF_TRUSTED_ORIGINS = [
-    "https://predictifyfrontend.com",  # Ajouter l'URL de votre frontend pour éviter les erreurs 403
-    "http://localhost:3000",  # URL de votre frontend en développement
+    "https://predictifyfrontend.com",
+    "http://localhost:3000",
 ]
-
-# File upload configuration
-MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
